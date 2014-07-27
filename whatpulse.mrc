@@ -1,10 +1,10 @@
 ; WhatPulse Information Script for mIRC 6.X
-; Written by Scott Wilcox <sc0tt@sc0tt.ca>
+; Written by Scott Wilcox <scott@dor.ky>
 ; Thanks goto Splodgey, wasted.
 ;
-; http://sc0tt.ca http://unlagged.org
+; http://dor.ky
 ;
-; The is basic error checking included, although 
+; The is basic error checking included, although
 ; more could be added. There are many possibilies
 ; for this script, i just don't have to time to
 ; go through them at the moment, but anyome with
@@ -12,12 +12,12 @@
 ; to fit their needs.
 ;
 ; PLEASE NOTE:
-; 
+;
 ; For this script to work, you need to enable your
 ; stats to be generated on the whatpulse server. To
-; do this, login to the WhatPulse site, goto your 
+; do this, login to the WhatPulse site, goto your
 ; option and check "Generate XML statistics (webapi)"
-; you will then need to wait until 3:00, 9:00, 15:00 
+; you will then need to wait until 3:00, 9:00, 15:00
 ; or 21:00 GMT has passed to update your statistics.
 
 on *:start: {
@@ -43,7 +43,7 @@ alias wp_update {
   ; Socket not in use, echo out updating message
   echo $colour(info text) -a *** WhatPulse updating stats
 
-  ; If the whatpulse server ever changes, this will 
+  ; If the whatpulse server ever changes, this will
   ; need to be updated too.
   sockopen wp_socket whatpulse.org 80
 }
